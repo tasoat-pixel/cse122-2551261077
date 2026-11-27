@@ -1,0 +1,48 @@
+body {
+  background: #f2f2f2;
+  font-family: "Times New Roman", serif;
+}
+
+/* Khung quảng cáo */
+.banner {
+  max-width: 820px;
+  margin: 20px auto;
+  padding: 28px 36px;
+  color: #FFFFFF;
+  background: linear-gradient(160deg, #C9A227, #A8861B);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Tiêu đề */
+h1 {
+  text-align: center;
+  font-size: 26px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Đoạn văn */
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Ảnh nổi bên phải */
+.anh-noi {
+  float: right;
+  width: 260px;
+  margin: 0 0 14px 18px;
+  border: 3px solid rgba(255, 255, 255, 0.85);
+  border-radius: 4px;
+}
+
+/* Màn hình nhỏ */
+@media (max-width: 600px) {
+  .banner {
+    padding: 16px;
+  }
+
+  .anh-noi {
+    width: 40%;
+  }
+}
