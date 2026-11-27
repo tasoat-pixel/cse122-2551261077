@@ -1,0 +1,62 @@
+/* Biến màu dùng chung cho cả trang */
+:root {
+  --mau-do: #D40000;
+  --mau-xanh: #0033CC;
+  --nen-khung: #FFFDE7;
+  --nen-tieu-de: #FFD9E6;
+  --vien-khung: #9E9E9E;
+}
+
+/* Căn giữa khung bài thơ bằng Flexbox */
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 24px;
+  font-family: "Times New Roman", serif;
+}
+
+/* Khung bao bài thơ */
+.khung-tho {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 640px;
+  padding: 24px;
+  text-align: center;
+  background: var(--nen-khung);
+  border: 1px solid var(--vien-khung);
+}
+
+/* Tiêu đề: dải băng hồng */
+h1 {
+  margin: 0 0 20px;
+  padding: 6px 0;
+  font-size: 26px;
+  color: var(--mau-do);
+  background: var(--nen-tieu-de);
+}
+
+/* Định dạng chung cho mỗi khổ thơ */
+.kho {
+  margin: 0;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+/* Khổ 1 và khổ 3: chữ xanh */
+.xanh {
+  color: var(--mau-xanh);
+}
+
+/* Khổ 2: chữ đỏ */
+.do {
+  color: var(--mau-do);
+}
+
+/* Đường kẻ ngang giữa các khổ thơ */
+hr {
+  width: 55%;
+  margin: 16px auto;
+  border: none;
+  border-top: 1px solid var(--mau-xanh);
+}
